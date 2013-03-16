@@ -9,6 +9,6 @@ curl "https://raw.github.com/jwark/.bash_ext/master/.bash_ext" -o /tmp/.jw_bash_
 
 OR:
 
-B) Install permanently using:
+B) Install permanently using (will need to start a new session):
 
 curl "https://raw.github.com/jwark/.bash_ext/master/install.sh" | bash
