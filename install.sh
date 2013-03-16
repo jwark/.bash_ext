@@ -4,7 +4,6 @@ echo "Installing bash extensions for '$USER' to '$BASH_EXT'..."
 touch $BASH_EXT
 curl -L# "https://raw.github.com/jwark/.bash_ext/master/.bash_ext" -o $BASH_EXT
 SOURCE_CMD="source $BASH_EXT"
-$SOURCE_CMD
 
 function addSourceIfNeeded {
   DOT_FILE=$1
