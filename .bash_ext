@@ -1,0 +1,51 @@
+alias gx="gitx"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gca="git commit -a"
+alias gco="git checkout"
+alias gd="git diff --word-diff"
+alias gdc="git diff --cached"
+alias gs="git status"
+alias gss="git stash save"
+alias gsa="git stash apply"
+alias gsp="git stash pop"
+alias gsl="git stash list"
+alias gps="git push"
+alias gpl="git pull --rebase"
+alias git-svn="git svn"
+alias gsr="git svn rebase"
+alias gsd="git svn dcommit"
+alias gl="git log --name-status"
+
+alias gpl-with-stash="gss && gpl && gsp"
+alias dir=ls
+alias ll="ls -al"
+
+alias be="bundle exec"
+alias bec='bundle exec cucumber'
+alias ber='bundle exec rake'
+alias bes='bundle exec spec'
+
+function turnNetworkAndApacheOff
+{
+  echo "Turning off Apache server and disabling all network interfaces"
+  for networkInterface in `ifconfig -l`
+  do
+    `sudo ifconfig ${networkInterface} down`
+  done
+  `sudo apachectl stop`
+}
+
+function turnNetworkAndApacheOn
+{
+  echo "Turning Apache server on and re-enabling all network interfaces"
+  for networkInterface in `ifconfig -l`
+  do
+    `sudo ifconfig ${networkInterface} up`
+  done
+  `sudo apachectl start`
+}
+
+alias go-online=turnNetworkAndApacheOn
+alias go-offline=turnNetworkAndApacheOff
