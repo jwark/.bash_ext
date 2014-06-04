@@ -20,7 +20,7 @@ alias gl="git log --name-status"
 
 alias gpl-with-stash="gss && gpl && gsp"
 alias dir=ls
-alias ll="ls -al"
+alias ll="ls -alh"
 
 alias be="bundle exec"
 alias bec='bundle exec cucumber'
