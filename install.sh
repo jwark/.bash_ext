@@ -2,7 +2,7 @@ BASH_EXT="$HOME/.jw_bash_ext"
 echo "Installing bash extensions for '$USER' to '$BASH_EXT'..."
 
 touch $BASH_EXT
-curl -L# "https://raw.github.com/jwark/.bash_ext/master/.bash_ext" -o $BASH_EXT
+curl -L# "https://raw.githubusercontent.com/jwark/.bash_ext/master/.bash_ext" -o $BASH_EXT
 SOURCE_CMD="source $BASH_EXT"
 
 function addSourceIfNeeded {
