@@ -19,6 +19,9 @@ alias gl="git log --name-status"
 
 alias gpl-with-stash="gss && gpl && gsp"
 alias git-reset-to-remote-master="git fetch origin && git reset --hard origin/master"
+
+alias docker-prune-all="docker system prune -f"
+
 alias dir=ls
 alias ll="ls -alh"
 
