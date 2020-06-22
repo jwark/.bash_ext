@@ -10,12 +10,15 @@ alias gs="git status"
 alias gss="git stash save"
 alias gsa="git stash apply"
 alias gsp="git stash pop"
+alias gsd="git stash drop"
 alias gsl="git stash list"
 alias gps="git push"
+alias gps-force-with-lease="git push --force-with-lease"
 alias gpl="git pull --rebase"
 alias gl="git log --name-status"
 
 alias gpl-with-stash="gss && gpl && gsp"
+alias git-reset-to-remote-master="git fetch origin && git reset --hard origin/master"
 alias dir=ls
 alias ll="ls -alh"
 
